@@ -1,4 +1,3 @@
-app/javascript/react/src/AppTest.js
 import App from '../src/App';
 import React from 'react'
 import { mount } from 'enzyme';
