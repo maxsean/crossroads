@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link, Route, Switch } from 'react-router-dom'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import Home from './components/Home'
 import Projects from './containers/Projects'
+import Navigation from './components/Navigation'
 
 class App extends React.Component{
   render() {
     return(
       <div>
-        <nav className="navbar navbar-light">
-          <ul className="nav navbar-nav">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-          </ul>
-        </nav>
+        <MuiThemeProvider>
+          <Navigation/>
+          <br/>
+        </MuiThemeProvider>
 
         <Route exact={true} path="/" component={Home}/>
         <Route path="/projects" component={Projects}/>
