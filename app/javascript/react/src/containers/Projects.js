@@ -23,6 +23,20 @@ class Projects extends React.Component {
     }
   }
 
+  componentDidMount() {
+    this.fetchProjects()
+  }
+
+  fetchProjects() {
+    fetch('/api/v1/projects')
+    .then(response => response.json())
+    .then(data => {
+      this.setState({
+        projects: data
+      })
+    })
+  }
+
   render(){
     var projectList = this.state.projects.map( (project) => {
       return(
