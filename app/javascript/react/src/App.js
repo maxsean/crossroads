@@ -11,8 +11,8 @@ class App extends React.Component{
       <div>
         <MuiThemeProvider>
           <Navigation/>
-          <br/>
         </MuiThemeProvider>
+        <br/>
 
         <Route exact={true} path="/" component={Home}/>
         <Route path="/projects" component={Projects}/>
