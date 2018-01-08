@@ -6,20 +6,7 @@ class Projects extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      projects: [
-        {
-          id: 1,
-          name: "YANA",
-          description: "Chronic Illness Patient Support",
-          url: "yana-app.herokuapp.com"
-        },
-        {
-          id: 2,
-          name: "Eatalike",
-          description: "Restaurant Review Site",
-          url: "eatalike.herokuapp.com"
-        }
-      ]
+      projects: []
     }
   }
 
