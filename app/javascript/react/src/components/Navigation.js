@@ -25,12 +25,12 @@ class Navigation extends React.Component {
     )
 
     var appBarStyle = {
-      backgroundColor: 'white',
+      backgroundColor: '#fefdfb',
       boxShadow: 'none'
     }
 
     var tabStyle = {
-      backgroundColor: 'white',
+      backgroundColor: '#fefdfb',
       color: 'black',
       fontFamily: 'EB Garamond, serif'
     }

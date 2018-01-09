@@ -6,8 +6,10 @@ class Projects extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      projects: []
+      projects: [],
+      selected: window.location.pathname.split('/')[2]
     }
+    this.handleClick = this.handleClick.bind(this)
   }
 
   componentDidMount() {
@@ -24,28 +26,46 @@ class Projects extends React.Component {
     })
   }
 
+  handleClick(event){
+    this.setState({
+      selected: event.target.id
+    })
+  }
+
   render(){
     var projectList = this.state.projects.map( (project) => {
+      let tileClass
+      if (project.id == this.state.selected) {
+        tileClass = "project-tile-selected"
+      } else {
+        tileClass = "project-tile"
+      }
+
       return(
-        <li key={project.id}>
-          <Link to={`${this.props.match.url}/${project.id}`}>
+        <div className={tileClass} key={project.id}>
+          <Link
+            id={project.id}
+            to={`${this.props.match.url}/${project.id}`}
+            style={{textDecoration:'none'}}
+            onClick={this.handleClick}
+          >
             {project.name}
           </Link>
-        </li>
+        </div>
       )
     })
-
     return(
-      <div>
+      <div className="project-tab">
         <div>
-          <div>
-            <h3>Projects</h3>
-            <ul>{projectList}</ul>
+          <div className="project-list">
+            {projectList}
           </div>
         </div>
 
-        <Route path={`${this.props.match.url}/:projectId`} render={ (props) => <Project data={this.state.projects} {...props} />}/>
-        <Route exact path={this.props.match.url} render={() => (<div>Please select a project</div>)}/>
+        <div className="project">
+          <Route path={`${this.props.match.url}/:projectId`} render={ (props) => <Project data={this.state.projects} {...props} />}/>
+          <Route exact path={this.props.match.url} render={() => (<div style={{padding:'18px 0'}}>Please select a project</div>)}/>
+        </div>
       </div>
     )
   }
