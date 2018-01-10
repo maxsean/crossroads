@@ -32,7 +32,8 @@ class Navigation extends React.Component {
     var tabStyle = {
       backgroundColor: '#fefdfb',
       color: 'black',
-      fontFamily: 'EB Garamond, serif'
+      fontFamily: 'EB Garamond, serif',
+      zIndex: '1'
     }
 
     return(
