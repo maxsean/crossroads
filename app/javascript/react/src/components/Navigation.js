@@ -33,7 +33,6 @@ class Navigation extends React.Component {
       backgroundColor: '#fefdfb',
       color: 'black',
       fontFamily: 'EB Garamond, serif',
-      zIndex: '1'
     }
 
     return(
