@@ -14,6 +14,9 @@ const Home = (props) => {
         </ul>
 
       </div>
+      <div className="home-tile">
+        home tile
+      </div>
     </div>
   )
 }
