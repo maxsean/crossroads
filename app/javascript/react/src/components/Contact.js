@@ -65,7 +65,7 @@ class Contact extends React.Component {
     return(
       <div>
         <div className="contact-header">
-          Leave a Message!
+          <h2>Leave a Message!</h2>
         </div>
         <form className="contact-form" onSubmit={this.handleSubmit}>
           <TextInputField

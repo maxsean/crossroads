@@ -1,0 +1,27 @@
+.contact-header {
+  border-style: solid;
+  width: 75%;
+  margin: 5%;
+  padding: 0 5%;
+}
+
+.contact-form {
+  border-style: solid;
+  width: 75%;
+  margin: 5%;
+  padding: 5%;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.button {
+  background-color: #333333;
+  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
+  color: white;
+  margin: 10px 10px;
+}
