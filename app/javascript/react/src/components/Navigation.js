@@ -16,7 +16,7 @@ class Navigation extends React.Component {
   render() {
     var titleStyle = {
       margin: 0,
-      color: 'black',
+      color: '#C0B283',
       textAlign: 'center',
       fontFamily: 'EB Garamond, serif'
     }
@@ -25,13 +25,13 @@ class Navigation extends React.Component {
     )
 
     var appBarStyle = {
-      backgroundColor: '#fefdfb',
+      backgroundColor: '#F5F5F5',
       boxShadow: 'none'
     }
 
     var tabStyle = {
-      backgroundColor: '#fefdfb',
-      color: 'black',
+      backgroundColor: '#F5F5F5',
+      color: '#373737',
       fontFamily: 'EB Garamond, serif',
     }
 
