@@ -9,26 +9,28 @@
 }
 
 .project-list {
-  padding: 18px 5px;
-  height: 100%;
+  margin-top: 15px;
+  padding: 18px 10px;
+  height: 70vh;
+  background-color: #373737;
+  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
+  color: #DCD0C0;
 }
 
 .project-tile {
-  background-color: white;
   width: 18vw;
   margin-bottom: 10px;
-  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
+  padding: 0 8px;
 }
 
 .project-tile-selected {
-  background-color: #9FBEDE;
+  background-color: #DCD0C0;
   width: 18vw;
-  margin-bottom: 5px;
-  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
+  margin-bottom: 10px;
+  padding: 0 8px;
 }
 
 .project {
   width: 75%;
   padding: 0 20px;
-  height: 100%;
 }

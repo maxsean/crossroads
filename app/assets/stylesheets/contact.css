@@ -1,15 +1,19 @@
 .contact-header {
-  border-style: solid;
   width: 75%;
   margin: 5%;
-  padding: 0 5%;
+  padding: 2% 5%;
+  background-color: #DCD0C0;
+  color: #373737;
+  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
 }
 
 .contact-form {
-  border-style: solid;
   width: 75%;
   margin: 5%;
   padding: 5%;
+  background-color: #DCD0C0;
+  color: #373737;
+  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
 }
 
 .button-group {
@@ -20,8 +24,7 @@
 }
 
 .button {
-  background-color: #333333;
-  box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
-  color: white;
+  background-color: #373737;
+  color: #DCD0C0;
   margin: 10px 10px;
 }

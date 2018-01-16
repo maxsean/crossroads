@@ -31,12 +31,21 @@ const Project = ({match,data}) => {
     }
     projectData =
       <div>
-        <div style={{padding:'0 20px'}}>
+        <div
+          className="tile"
+          style={{marginTop:'15px',padding:'10px 30px',backgroundColor:'#DCD0C0',color:'#373737'}}
+        >
           <h3> {project.name} </h3>
           <p> {project.description} </p>
           <p> {project.url} </p>
         </div>
-        <div style={{padding:'0 20px'}}>
+        <div
+          className="tile"
+          style={{padding:'10px 30px',backgroundColor:'#DCD0C0'}}
+        >
+          <p>
+            Image Preview
+          </p>
           <Slider {...settings}>
             {images}
           </Slider>

@@ -7,7 +7,7 @@ class Projects extends React.Component {
     super(props)
     this.state = {
       projects: [],
-      selected: window.location.pathname.split('/')[2]
+      selected: null
     }
     this.handleClick = this.handleClick.bind(this)
   }
@@ -46,7 +46,7 @@ class Projects extends React.Component {
           <Link
             id={project.id}
             to={`${this.props.match.url}/${project.id}`}
-            style={{textDecoration:'none'}}
+            style={{textDecoration:'none',color:'#C0B283'}}
             onClick={this.handleClick}
           >
             {project.name}
@@ -64,7 +64,7 @@ class Projects extends React.Component {
 
         <div className="project">
           <Route path={`${this.props.match.url}/:projectId`} render={ (props) => <Project data={this.state.projects} {...props} />}/>
-          <Route exact path={this.props.match.url} render={() => (<div style={{padding:'18px 0'}}>Please select a project</div>)}/>
+          <Route exact path={this.props.match.url} render={() => (<div className='tile' style={{padding:'18px'}}>Please select a project</div>)}/>
         </div>
       </div>
     )
