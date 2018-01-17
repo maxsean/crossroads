@@ -1,4 +1,5 @@
 import React from 'react'
+import Blogs from '../containers/Blogs'
 
 const Home = (props) => {
   return(
@@ -16,8 +17,11 @@ const Home = (props) => {
 
       </div>
       <div className="home-tile">
-          My name is Sean and I'm a web developer. I enjoy finding elegant solutions to challenging problems and thrive in highly collaborative environments with multi-disciplinary teams.
+          <p>
+            My name is Sean and I'm a web developer. I enjoy finding elegant solutions to challenging problems and thrive in highly collaborative environments with multi-disciplinary teams.
+          </p>
       </div>
+      <Blogs />
     </div>
   )
 }

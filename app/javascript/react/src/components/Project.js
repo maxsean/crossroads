@@ -37,7 +37,7 @@ const Project = ({match,data}) => {
         >
           <h3> {project.name} </h3>
           <p> {project.description} </p>
-          <p> {project.url} </p>
+          <p>Check out {project.name}:  <a href={project.url} target="_blank">{project.url}</a> </p>
         </div>
         <div
           className="tile"
