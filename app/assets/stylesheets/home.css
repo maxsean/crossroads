@@ -1,9 +1,11 @@
 .home-tile {
+  position: relative;
+  z-index: 1;
   background-color: #DCD0C0;
   color: #373737;
   box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
   margin: 20px 80px;
   padding: 15px 20px;
-  text-align: justify;
   font-size: 20px;
+  white-space: pre-wrap;
 }

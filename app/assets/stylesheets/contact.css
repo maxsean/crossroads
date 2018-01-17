@@ -1,6 +1,5 @@
 .contact-header {
-  width: 75%;
-  margin: 5%;
+  margin: 5% 15%;
   padding: 2% 5%;
   background-color: #DCD0C0;
   color: #373737;
@@ -8,8 +7,7 @@
 }
 
 .contact-form {
-  width: 75%;
-  margin: 5%;
+  margin: 5% 15%;
   padding: 5%;
   background-color: #DCD0C0;
   color: #373737;
