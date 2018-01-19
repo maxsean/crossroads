@@ -4,7 +4,7 @@ import React from 'react';
 const TextAreaField = props => {
   return(
     <label
-      onChange={props.handleChange}
+      onChange={props.onChange}
       style={{verticalAlign:'top'}}
       >{props.label}
     <textarea
@@ -12,7 +12,7 @@ const TextAreaField = props => {
       id={props.name}
       name={props.name}
       type='text'
-      value={props.content}
+      value={props.value}
       style={{margin:'5px 0',width:'100%',height:'100px'}}
     />
     </label>
