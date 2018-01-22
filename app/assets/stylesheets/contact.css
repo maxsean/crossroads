@@ -1,9 +1,11 @@
 .contact-header {
   margin: 5% 15%;
   padding: 2% 5%;
-  background-color: #DCD0C0;
-  color: #373737;
+  background-color: #373737;
+  color: #C0B283;
   box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
+  position: relative;
+  text-align: center;
 }
 
 .contact-form {
@@ -12,6 +14,8 @@
   background-color: #DCD0C0;
   color: #373737;
   box-shadow: 3px 5px 6px -2px rgba(0,0,0,0.66);
+  position: relative;
+  z-index: 1;
 }
 
 .button-group {
@@ -19,10 +23,14 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
 }
 
 .button {
   background-color: #373737;
   color: #DCD0C0;
   margin: 10px 10px;
+  position: relative;
+  z-index: 1;
 }
