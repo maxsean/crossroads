@@ -34,7 +34,7 @@ class Blogs extends React.Component {
               {blog.title}
             </h2>
             <p>
-              {Date(blog.updated_at).toString().substring(3,15)}
+              {new Date(blog.updated_at).toString().substring(3,15)}
             </p>
             <p dangerouslySetInnerHTML={{__html: blog.body}} />
           </div>
