@@ -3,7 +3,7 @@ class UserMailer < ApplicationMailer
 
   def contact_message(payload)
     @url = '/contact'
-    @username = payload["username"]
+    @username = payload["name"]
     @contact = payload["contact"]
     @message = payload["message"]
 
