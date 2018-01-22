@@ -1,15 +1,14 @@
 import React from 'react'
 import TextInputField from './TextInputField'
 import TextAreaField from './TextAreaField'
-import FormErrors from './FormErrors'
 
 class Contact extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      name: " ",
+      name: "",
       contact: "",
-      message: " ",
+      message: "",
       formErrors: {
         name: '',
         contact: '',
@@ -74,15 +73,15 @@ class Contact extends React.Component {
 
     switch(fieldName) {
       case 'name':
-        nameValid = !value.match(/^\s+$/);
+        nameValid = !value.match(/^\s*$/);
         fieldValidationErrors["name"] = nameValid ? '' : ' cannot be blank';
         break;
       case 'contact':
         contactValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors["contact"] = contactValid ? '' : ' is invalid';
+        fieldValidationErrors["contact"] = contactValid ? '' : ' is invalid, expecting @ and domain extension';
         break;
       case 'message':
-        messageValid = !value.match(/^\s+$/);
+        messageValid = !value.match(/^\s*$/);
         fieldValidationErrors["message"] = messageValid ? '' : ' cannot be blank';
         break;
     }
@@ -133,7 +132,6 @@ class Contact extends React.Component {
         </div>
         <form className="contact-form" onSubmit={this.handleSubmit}>
           <div className="errors">
-            <FormErrors formErrors={this.state.formErrors} />
           </div>
           <div className="success">
             {success}
@@ -144,6 +142,7 @@ class Contact extends React.Component {
             name="name"
             onChange={this.handleChange}
             type="text"
+            formErrors={this.state.formErrors}
           />
           <TextInputField
             value={this.state.contact}
@@ -151,12 +150,14 @@ class Contact extends React.Component {
             name="contact"
             onChange={this.handleChange}
             type="text"
+            formErrors={this.state.formErrors}
           />
           <TextAreaField
             value={this.state.message}
             label="Message: "
             name="message"
             onChange={this.handleChange}
+            formErrors={this.state.formErrors}
           />
           <div className='button-group'>
             <input className='button' type='submit' value='Submit' />
