@@ -39,8 +39,8 @@ Rails.application.configure do
   enable_starttls_auto: true,
   address:              'smtp.gmail.com',
   port:                 587,
-  user_name:            'solbasu.notifications@gmail.com',
-  password:             '90xsma64',
+  user_name:            ENV["MAILER_EMAIL"],
+  password:             ENV["MAILER_PASSWORD"],
   authentication:       'plain'
 }
 
