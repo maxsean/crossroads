@@ -1,3 +1,4 @@
 # README
 
-Personal website (not deployed yet)
+Personal website 
+Deployed on [heroku](https://maxsean.herokuapp.com)
